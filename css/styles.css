@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#main-container {
+    width: 100%;
+}
+
+#f-container {
+    float: left;
+    width: 20%;
+    background-color: #eeeeee;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#f-container h3 {
+    margin-top: 0;
+}
+
+#favorite-list {
+    padding-left: 20px;
+}
+
+#favorite-list li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.p-container {
+    margin-left: 22%;
+    padding: 10px;
+}
+
+#unit-id {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#results {
+    margin-top: 20px;
+    margin-left: 22%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ccc;
+    border-radius:8px
+}
+
+#results p{
+    color: inherit;
+}
+
+body.cold{
+    background-color: #a3c9f7;
+    color: black;
+}
+
+body.warm{
+    background-color: #fdf5e6;
+    color: black;
+}
+
+body.hot{
+    background-color: #ffb3b3;
+    color: black;
+}
+
+body.night{
+    background-color: #222;
+    color: white;
+}
+
+body.night #f-container{
+    color: black;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+body.night #results img{
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.7));
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+
+.forecastPlacer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+
+.forecastBox {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    width: 160px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.forecastBox:hover {
+    transform: scale(1.05);
+}
+
+.forecastBox img {
+    width: 60px;
+    height: 60px;
+}
+
+body.night .forecastBox {
+    background-color: #333;
+    border-color: #444;
+    color: white;
+}
+
+body.night .forecast-card img {
+    filter: brightness(0.9) drop-shadow(0 0 4px white); 
+}
+
+
+@media (max-width: 600px) {
+    .forecastBox {
+        width: 100%;
+    }
+
+    .p-container {
+        margin-left: 0;
+    }
+
+    #results {
+        margin-left: 0;
+    }
+
+    #f-container {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/code.js" defer></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="f-container">
+            <h3>Your favorite cities:</h3>
+            <ul id="favorite-list"></ul>
+        </div>
+
+        <div class="p-container">
+            <h1>WeatherApp-Project</h1>
+            <input type="text" id="input" placeholder="City">
+            <button id="weather_btn">Search</button>
+            <button id="own-location">My area</button>
+            <button id="favorite-btn">Add to favorites</button>
+            <select id="unit-id">
+                <option value="metric">Celcius</option>
+                <option value="imperial">Farenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        
+       <div id="results">
+            <div id="weather-now"></div>
+            <div id="weather-week"></div>
+            <div id="weather-24h"></div>
+       </div>
+        
+    </div>
+    
+</body>
+</html>
