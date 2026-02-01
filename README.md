@@ -29,3 +29,7 @@ The app allows users to:
 
 - The app is easy to navigate, no manual required
 - Hourly forecast uses 3-hour intervals due to API restrictions
+
+## Live demo
+
+Live demo can be seen here: https://noelsolomonhagos1.github.io/webprogramming-weatherapp/
